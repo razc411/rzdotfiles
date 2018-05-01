@@ -1,0 +1,81 @@
+// vim:ts=4:sw=4:et
+{
+    "border": "pixel",
+    "current_border_width": 2,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 1460,
+       "width": 3838,
+       "x": 18,
+       "y": 79
+    },
+    "name": "i3/AnyEvent-I3: See AnyEvent-I3/ in the i3 repository: - Google Chrome",
+    "percent": 0.5,
+    "swallows": [
+       {
+       // "class": "^Google\\-chrome$",
+       // "instance": "^google\\-chrome$",
+       // "title": "^i3\\/AnyEvent\\-I3\\:\\ See\\ AnyEvent\\-I3\\/\\ in\\ the\\ i3\\ repository\\:\\ \\-\\ Google\\ Chrome$",
+       // "transient_for": "^$",
+       // "window_role": "^browser$"
+       }
+    ],
+    "type": "con"
+}
+
+{
+    // splitv split container with 2 children
+    "border": "pixel",
+    "floating": "auto_off",
+    "layout": "splitv",
+    "percent": 0.5,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "pixel",
+            "current_border_width": 2,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 742,
+               "width": 1122,
+               "x": 0,
+               "y": 0
+            },
+            "name": "nvim ~/Code/pythgraph/main.py",
+            "percent": 0.5,
+            "swallows": [
+               {
+               // "class": "^Terminator$",
+               // "instance": "^terminator$",
+               // "title": "^nvim\\ \\~\\/Code\\/pythgraph\\/main\\.py$",
+               // "transient_for": "^$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "pixel",
+            "current_border_width": 2,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 1065,
+               "width": 1920,
+               "x": 1921,
+               "y": 35
+            },
+            "name": "#main-chat - Discord",
+            "percent": 0.5,
+            "swallows": [
+               {
+               // "class": "^discord$",
+               // "instance": "^discord$",
+               // "title": "^\\#main\\-chat\\ \\-\\ Discord$",
+               // "transient_for": "^$",
+               // "window_role": "^browser\\-window$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+

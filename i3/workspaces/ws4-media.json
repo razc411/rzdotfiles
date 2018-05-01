@@ -1,0 +1,80 @@
+// vim:ts=4:sw=4:et
+{
+    "border": "pixel",
+    "current_border_width": 2,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 2124,
+       "width": 1918,
+       "x": 1938,
+       "y": 52
+    },
+    "name": "i3: Layout saving in i3 - Google Chrome",
+    "percent": 0.8,
+    "swallows": [
+       {
+       // "class": "^Google\\-chrome$",
+       // "instance": "^google\\-chrome$",
+       // "title": "^i3\\:\\ Layout\\ saving\\ in\\ i3\\ \\-\\ Google\\ Chrome$",
+       // "transient_for": "^$",
+       // "window_role": "^browser$"
+       }
+    ],
+    "type": "con"
+}
+
+{
+    // splitv split container with 2 children
+    "border": "pixel",
+    "floating": "auto_off",
+    "layout": "splitv",
+    "percent": 0.2,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "pixel",
+            "current_border_width": 2,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 742,
+               "width": 1122,
+               "x": 0,
+               "y": 0
+            },
+            "name": "ramzi@divisive: ~",
+            "percent": 0.5,
+            "swallows": [
+               {
+               // "class": "^Terminator$",
+               // "instance": "^terminator$",
+               // "title": "^ramzi\\@divisive\\:\\ \\~$",
+               // "transient_for": "^$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "pixel",
+            "current_border_width": 2,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 742,
+               "width": 1122,
+               "x": 0,
+               "y": 0
+            },
+            "name": "ramzi@divisive: ~",
+            "percent": 0.5,
+            "swallows": [
+               {
+               // "class": "^Terminator$",
+               // "instance": "^terminator$",
+               // "title": "^ramzi\\@divisive\\:\\ \\~$",
+               // "transient_for": "^$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+
