@@ -135,6 +135,8 @@ let g:NERDTreeMapPreviewSplit = 'gh'
 nnoremap <leader>d "_d
 xnoremap <leader>d "_d
 xnoremap <leader>p "_dP
+noremap <leader>c gg<C-v>GI//<Esc>
+noremap <leader>nc gg<C-v>Glx<Esc>
 
 nnoremap <silent> <leader>s :set spell!<cr>
 noremap <Esc> <C-\><C-n> 
@@ -186,6 +188,8 @@ function! GetBufferList()
   redir END
   return buflist
 endfunction
+
+
 
 function! ToggleList(bufname, pfx)
   let buflist = GetBufferList()

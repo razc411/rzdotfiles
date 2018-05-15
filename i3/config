@@ -13,6 +13,7 @@ set $mod Mod4
 
 # execs
 exec_always --no-startup-id ~/.config/polybar/launch.sh
+exec --no-startup-id compton -b
 exec --no-startup-id nitrogen --restore
 # is used in the bar {} block below.
 font pango:source code pro semibold 8 
@@ -157,3 +158,8 @@ client.focused  #ffb52a     #ffb52a      #ffffff     #ffb52a     #ffb52a
 new_window pixel 1
 #custom keys
 bindsym $mod+c fullscreen 
+
+workspace 1 output DP-4
+workspace 2 output DP-4
+workspace 3 output DVI-I-1
+workspace 4 output DVI-I-1

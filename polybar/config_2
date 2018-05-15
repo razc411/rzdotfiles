@@ -24,7 +24,7 @@ width = 100%
 height = 30
 radius = 6.0
 fixed-center = false
-dpi = 200 
+dpi = 192 
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -46,50 +46,13 @@ font-2 = wuncon siji:pixelsize=10;1
 
 modules-left = i3
 modules-center = 
-modules-right = date 
+modules-right = eth date 
 
 tray-position = right
 tray-padding = 2
 
 cursor-click = pointer
 cursor-scroll = ns-resize
-
-[bar/secondary]
-monitor = ${env:MONITOR:DVI-I-1}
-width = 100%
-height = 30
-radius = 6.0
-fixed-center = false
-dpi = 200 
-
-background = ${colors.background}
-foreground = ${colors.foreground}
-
-line-size = 3
-line-color = #f00
-
-border-color = #00000000
-
-padding-left = 0
-padding-right = 0
-
-module-margin-left = 1
-module-margin-right = 2
-
-font-0 = fixed:pixelsize=9.5;1
-font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
-font-2 = wuncon siji:pixelsize=10;1
-
-modules-left = i3
-modules-center = 
-modules-right = date 
-
-tray-position = right
-tray-padding = 2
-
-cursor-click = pointer
-cursor-scroll = ns-resize
-
 
 [module/xwindow]
 type = internal/xwindow
@@ -110,39 +73,6 @@ label-indicator-padding = 2
 label-indicator-margin = 1
 label-indicator-background = ${colors.secondary}
 label-indicator-underline = ${colors.secondary}
-
-[module/filesystem]
-type = internal/fs
-interval = 3600
-
-mount-0 = /home
-
-;format-mounted-prefix-foreground = ${colors.primary}
-;format-mounted-overline = ${colors.primary}
-;format-mounted-prefix = 
-
-label-mounted = %{A:terminator -x ranger &:}%free%%{A}
-label-unmounted = %mountpoint% not mounted
-label-unmounted-foreground = ${colors.foreground-alt}
-
-[module/bspwm]
-type = internal/bspwm
-
-label-focused = %index%
-label-focused-background = ${colors.background-alt}
-label-focused-underline= ${colors.primary}
-label-focused-padding = 2
-
-label-occupied = %index%
-label-occupied-padding = 2
-
-label-urgent = %index%!
-label-urgent-background = ${colors.alert}
-label-urgent-padding = 2
-
-label-empty = %index%
-label-empty-foreground = ${colors.foreground-alt}
-label-empty-padding = 2
 
 [module/i3]
 type = internal/i3
@@ -177,37 +107,6 @@ label-visible-padding = ${self.label-focused-padding}
 label-urgent = %index%
 label-urgent-background = ${module/bspwm.label-urgent-background}
 label-urgent-padding = ${module/bspwm.label-urgent-padding}
-
-[module/cpu]
-type = internal/cpu
-interval = 2
-format-prefix-foreground = ${colors.foreground-alt}
-format-underline = ${colors.secondary}
-label = %percentage:2%%
-
-[module/memory]
-type = internal/memory
-interval = 2
-format-prefix = " "
-format-prefix-foreground = ${colors.foreground-alt}
-format-underline = ${colors.secondary} 
-label = %percentage_used%%
-
-[module/eth]
-type = internal/network
-interface = eno1
-interval = 3.0
-
-format-connected-underline = ${colors.secondary}  
-format-connected-prefix = " "
-format-connected-prefix-foreground = ${colors.foreground-alt}
-label-connected = %local_ip%
-
-format-disconnected =
-;format-disconnected = <label-disconnected>
-;format-disconnected-underline = ${self.format-connected-underline}
-;label-disconnected = %ifname% disconnected
-;label-disconnected-foreground = ${colors.foreground-alt}
 
 [module/date]
 type = internal/date
